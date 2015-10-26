@@ -1,0 +1,23 @@
+{
+  "name": "boost",
+  "description": "Start package for dev",
+  "main": "",
+  "authors": [
+    "Eprincev Egor"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/eprincev-egor/boost",
+  "moduleType": [
+    "amd"
+  ],
+  "dependencies": {
+    "backbone.marionette": "marionette#~2.4.3",
+    "ckeditor": "~4.5.4",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "requirejs": "*",
+    "jquery-ui": "~1.11.4",
+    "backbone": "~1.2.3"
+  }
+}

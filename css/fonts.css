@@ -1,0 +1,57 @@
+
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome/fontawesome-webfont.eot');src:url('../fonts/fontawesome/fontawesome-webfont.eot') format('embedded-opentype'),url('../fonts/fontawesome/fontawesome-webfont.woff2') format('woff2'),url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'),url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'),url('../fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+.fa{font-family:'FontAwesome';}
+
+/* font-family: "Noto Sans"; 
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/notosans/NotoSansRegular.eot");
+    src: url("../fonts/notosans/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/notosans/NotoSansRegular.woff") format("woff"),
+    url("../fonts/notosans/NotoSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/notosans/NotoSansBoldItalic.eot");
+    src: url("../fonts/notosans/NotoSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/notosans/NotoSansBoldItalic.woff") format("woff"),
+    url("../fonts/notosans/NotoSansBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/notosans/NotoSansItalic.eot");
+    src: url("../fonts/notosans/NotoSansItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/notosans/NotoSansItalic.woff") format("woff"),
+    url("../fonts/notosans/NotoSansItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/notosans/NotoSansBold.eot");
+    src: url("../fonts/notosans/NotoSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/notosans/NotoSansBold.woff") format("woff"),
+    url("../fonts/notosans/NotoSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+*/
+
+/* font-family: "Star"; 
+@font-face {
+    font-family: "Star";
+    src: url("../fonts/star/star.eot"),
+    url("../fonts/star/star.woff") format("woff"),
+    url("../fonts/star/star.ttf") format("truetype"),
+	url("../fonts/star/star.svg") format("svg");
+	font-style: normal;
+    font-weight: normal;
+}
+*/

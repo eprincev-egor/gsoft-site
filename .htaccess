@@ -1,0 +1,35 @@
+<IfModule mod_charset.c>
+  CharsetDisable On
+</IfModule>
+AddDefaultCharset UTF-8
+php_value default_charset utf-8
+
+DirectoryIndex index.html
+
+php_flag display_errors on
+php_flag register_globals Off
+php_value register_globals Off
+php_flag magic_quotes_gpc off
+
+RewriteEngine on
+
+RewriteRule ^api/(.*) index.html [QSA,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !\.(css|zip|doc|htc|xls|js|jpg|gif|png|swf|pdf|rar|wmv|mp3|txt|html|htm|php|csv|ico|docx|eot|woff|ttf|svg)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L]
+
+RewriteRule ^.htaccess$ - [F]
+
+RewriteRule ^core/(.*) 403.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^.*$ index.html [QSA,L]
