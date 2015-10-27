@@ -34,3 +34,74 @@
     transform: rotate(359deg);
   }
 }
+
+.btn.btn-turquoise {
+	display: inline-block;
+	background-color:#16acb4;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#16acb4, endColorstr=#008796);
+	background-image:-moz-linear-gradient(top, #16acb4 0%, #008796 100%);
+	background-image:-webkit-linear-gradient(top, #16acb4 0%, #008796 100%);
+	background-image:-ms-linear-gradient(top, #16acb4 0%, #008796 100%);
+	background-image:linear-gradient(top, #16acb4 0%, #008796 100%);
+	background-image:-o-linear-gradient(top, #16acb4 0%, #008796 100%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#16acb4), color-stop(100%,#008796));
+	border-bottom: 2px solid #007685;
+	border-radius: 3px;
+	box-sizing: border-box;
+	transition: background .3s;
+	font-size: 16px;
+	padding: 6px 12px;
+	color: white;
+}
+
+.btn.btn-turquoise:hover {
+	background-color:#1ac7d0;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1ac7d0, endColorstr=#01a0b2);
+	background-image:-moz-linear-gradient(top, #1ac7d0 0%, #01a0b2 100%);
+	background-image:-webkit-linear-gradient(top, #1ac7d0 0%, #01a0b2 100%);
+	background-image:-ms-linear-gradient(top, #1ac7d0 0%, #01a0b2 100%);
+	background-image:linear-gradient(top, #1ac7d0 0%, #01a0b2 100%);
+	background-image:-o-linear-gradient(top, #1ac7d0 0%, #01a0b2 100%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#1ac7d0), color-stop(100%,#01a0b2));
+	color: white;
+	text-decoration: none;
+}
+
+
+.btn.btn-turquoise:active {
+	background-color:#008796;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#008796, endColorstr=#16acb4);
+	background-image:-moz-linear-gradient(top, #008796 0%, #16acb4 100%);
+	background-image:-webkit-linear-gradient(top, #008796 0%, #16acb4 100%);
+	background-image:-ms-linear-gradient(top, #008796 0%, #16acb4 100%);
+	background-image:linear-gradient(top, #008796 0%, #16acb4 100%);
+	background-image:-o-linear-gradient(top, #008796 0%, #16acb4 100%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#008796), color-stop(100%,#16acb4));
+}
+
+.btn.btn-turquoise:focus {
+	outline: none;
+}
+
+.bg {
+	position: absolute;
+	width: 100%;
+}
+
+.bg img {
+	width: 100%;
+}
+
+.bg .bg-helper {
+	position: absolute;
+}
+
+.bg .bg-helper:before {
+	content: "";
+    display: block;
+    width: 70.71067811865476%;
+    height: 70.71067811865476%;
+    position: absolute;
+    transform-origin: 35.4% 85.35%;
+    transform: rotate(45deg);
+}
