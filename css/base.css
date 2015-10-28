@@ -88,6 +88,14 @@
 	width: 100%;
 }
 
+.bg-bottom {
+	bottom: 0;
+}
+
+.bg-top: {
+	top: 0;
+}
+
 .bg img {
 	width: 100%;
 }
