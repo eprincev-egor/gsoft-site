@@ -87,14 +87,14 @@ body, html {
 }
 
 .header.sticky {
-	background-color:#021222;
+	/* background-color:#021222; */
 	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#021222, endColorstr=#031a30);
 	background-image:-moz-linear-gradient(top, #021222 0%, #031a30 100%);
 	background-image:-webkit-linear-gradient(top, #021222 0%, #031a30 100%);
 	background-image:-ms-linear-gradient(top, #021222 0%, #031a30 100%);
 	background-image:linear-gradient(top, #021222 0%, #031a30 100%);
 	background-image:-o-linear-gradient(top, #021222 0%, #031a30 100%);
-	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#021222), color-stop(100%,#031a30));
+	background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%,rgba(39, 113, 161, 0.81)), color-stop(100%,rgba(21, 84, 128, 0.32)));
 	height: 74px;
 }
 
@@ -273,16 +273,41 @@ body, html {
 .section-advantages li .icon:after,
 .section-advantages li .icon-helper:before,
 .section-advantages li .icon-helper:after {
-	font-family: "Pe-icon-7-stroke";
+	/* font-family: "Pe-icon-7-stroke"; */
 	color: white;
 	font-style: normal;
 }
 
-.section-advantages li.users .icon-helper-1:before {
-	content: "\e6a9";
+.section-advantages li .icon-helper {
+	display: block;
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	background: url(../img/icons.png);
+}
+
+.section-advantages li.users .icon-helper-1 {
+	background-position: -355px -3px;
+}
+
+.section-advantages li.world .icon-helper-1 {
+	background-position: -284px 0;
+}
+
+.section-advantages li.laptop .icon-helper-1 {
+	background-position: -212px 0;
+}
+
+.section-advantages li.clock .icon-helper-1 {
+	background-position: -140px 2px;
+}
+
+.section-advantages li.shield .icon-helper-1 {
+	background-position: -71px 5px;
+}
+
+.section-advantages li.device .icon-helper-1 {
+	background-position: -447px 0;
 }
 
 @media (max-width: 993px) {
@@ -542,6 +567,72 @@ body, html {
 	top: 100px;
 }
 
+.section-scheme ul li .icon:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/icons.png) no-repeat 0 0;
+	background-position: 0px -90px;
+}
+
+.section-scheme ul li.box .icon:after {
+	background-position: 4px -68px;
+}
+
+.section-scheme ul li.auto .icon:after {
+	background-position: -80px -73px;
+}
+
+.section-scheme ul li.air .icon:after {
+	background-position: -376px -73px;
+}
+
+.section-scheme ul li.harbor .icon:after {
+	background-position: -153px -73px;
+}
+
+.section-scheme ul li.train .icon:after {
+	background-position: -303px -73px;
+}
+
+.section-scheme ul li.stock .icon:after {
+	background-position: -224px -69px;
+}
+.section-scheme ul li.stock.item-11 .icon:after {
+	background-position: -212px -65px;
+}
+
+.section-scheme ul li.box:hover .icon:after {
+	background-position: 4px -143px;
+}
+
+.section-scheme ul li.auto:hover .icon:after {
+	background-position: -80px -148px;
+}
+
+.section-scheme ul li.air:hover .icon:after {
+	background-position: -376px -148px;
+}
+
+.section-scheme ul li.harbor:hover .icon:after {
+	background-position: -153px -148px;
+}
+
+.section-scheme ul li.train:hover .icon:after {
+	background-position: -303px -148px;
+}
+
+.section-scheme ul li.stock:hover .icon:after {
+	background-position: -224px -148px;
+}
+.section-scheme ul li.stock.item-11:hover .icon:after {
+	background-position: -212px -140px;
+}
+
 .section-scheme .arrow {
 	position: absolute;
 	width: 68px;
@@ -769,6 +860,20 @@ body, html {
 	height: 17px;
 }
 
+.section-alternative .alternative-image:after {
+	content: "\e686";
+	font-family: "Pe-icon-7-stroke";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -6.031873%;
+	margin-top: -46.5px;
+	width: 4.063745019920319%;
+	font-size: 60px;
+	color: #E2E2E2;
+	font-weight: bold;
+}
+
 /* ==================================== */
 /* ==================================== */
 /* Desktop */
@@ -953,7 +1058,7 @@ body, html {
 .section-clients .bg-bottom .bg-helper-left {
 	width: 52%;
 	height: 52%;
-	left: -25%;
+	left: -26%;
 	bottom: -26%;
 }
 
@@ -1182,7 +1287,248 @@ body, html {
 /* ==================================== */
 /* ==================================== */
 /* Reviews */
+.section-reviews {
+	width: 100%;
+	height: 690px;
+	background: url(../img/reviews/bg.jpg) center center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
 
+.section-reviews:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 50%;
+	opacity: 0.3;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);/* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );/* IE6-9 */
+}
+
+.section-reviews .bg-top .bg-helper-left {
+	width: 52%;
+	height: 52%;
+	top: -26%;
+	left: -26%;
+}
+.section-reviews .bg-top .bg-helper-left:before {background: rgba(77,90,117,0.11);}
+
+.section-reviews .bg-bottom .bg-helper-left {
+	width: 40%;
+	height: 40%;
+	left: -22%;
+	bottom: -22%;
+}
+
+.section-reviews .bg-bottom .bg-helper-left:before {background: rgba(77,90,117,0.11);}
+
+.section-reviews .container {
+	position: relative;
+	color: white;
+}
+
+.section-reviews h1 {
+	 font-size: 48px;
+	 text-align: center;
+	 font-family: "Lato Light";
+	 margin-top: 71px;
+}
+
+.section-reviews .reviews-list li {
+	display: none;
+}
+
+.section-reviews .reviews-list li.active {
+	display: block;
+}
+
+.section-reviews .reviews-list li h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: "Lato Bold";
+}
+
+.section-reviews .reviews-list li span {
+	font-size: 16px;
+	font-style: italic;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.section-reviews .reviews-list li p {
+	font-size: 16px;
+}
+
+.section-reviews .reviews {
+	display: block;
+	width: 80%;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	height: 370px;
+	border-radius: 10px;
+	background: rgba(107,111,136,0.25);
+	position: relative;
+	top: -22px;
+}
+
+.section-reviews .reviews-list {
+	display: block;
+	width: 90%;
+	left: 40px;
+	position: relative;
+	top: 17px;
+	height: 250px;
+	overflow: hidden;
+	margin-top: 20px;
+	font-family: "Lato Light";
+}
+
+.section-reviews .reviews-helper-top {
+	width: 80%;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	height: 54px;
+	position: relative;
+	top: 50px;
+	border-radius: 10px 10px 0 0;
+	left: -2px;
+}
+
+.section-reviews .reviews-helper-bottom {
+	width: 80%;
+	border-bottom: 2px solid white;
+	border-radius: 0px 0px 20px 10px;
+	height: 17px;
+	position: relative;
+	top: -34px;
+	left: 7px;
+}
+
+.section-reviews .reviews-helper-right {
+	border-right: 2px solid white;
+	border-radius: 0px 10px 16px 0px;
+	height: 370px;
+	width: 17px;
+	position: absolute;
+	top: 185px;
+	left: 80%;
+	margin-top: 5px;
+	margin-left: -21px;
+}
+
+.section-reviews .reviews-helper-left {
+	border-left: 2px solid white;
+	border-radius: 0 0 0 10px;
+	height: 287px;
+	width: 17px;
+	position: absolute;
+	top: 267px;
+	left: 14px;
+}
+
+.section-reviews .man {
+	display: block;
+	position: absolute;
+	background: url(../img/reviews/man.png) 0 0 no-repeat;
+	background-size: 100% auto;
+	right: -22%;
+	width: 54%;
+	top: 7%;
+}
+
+.reviews-helper-triangle {
+	display: block;
+	position: absolute;
+	border-top: 15px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 23px solid rgba(107,111,136,0.25);
+	border-bottom: 15px solid transparent;
+	margin-top: 50px;
+	margin-left: -33px;
+}
+
+.reviews-helper-triangle-border {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: -21px;
+	display: block;
+	width: 20px;
+	height: 30px;
+}
+
+.reviews-helper-triangle-border:before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	background: white;
+	height: 27px;
+	transform-origin: 0 50%;
+	transform: rotate(55deg);
+	top: -7px;
+	left: 9px;
+}
+
+.reviews-helper-triangle-border:after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	background: white;
+	height: 27px;
+	transform-origin: 0 50%;
+	transform: rotate(-55deg);
+	top: 10px;
+	left: 9px;
+}
+
+.section-reviews .reviews-nav {
+	position: absolute;
+	bottom: 10px;
+	left: 38px;
+	font-size: 0;
+}
+
+.section-reviews .reviews-nav li {
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 5px;
+	background: white;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.section-reviews .reviews-nav li:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.section-reviews .reviews-nav li:before {
+	content: "x";
+	color: #4d5a75;
+	font-size: 43px;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-family: "Pe-icon-7-stroke";
+}
+
+.section-reviews .reviews-nav li.prev:before {
+	content: "\e686";
+}
+
+.section-reviews .reviews-nav li.next:before {
+	content: "\e684";
+}
 /* ==================================== */
 /* ==================================== */
 /* News*/
@@ -1196,6 +1542,10 @@ body, html {
 	background: #f2f2f2;
 	position: relative;
 	overflow: hidden;
+}
+
+.section-news .container {
+	position: relative;
 }
 
 .section-news .bg-bottom .bg-helper-left {
