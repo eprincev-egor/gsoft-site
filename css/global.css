@@ -1054,7 +1054,7 @@ body, html {
 }
 
 .section-desktop .desktop .items a img {
-	width: 100%;
+	width: calc( 100% + 1px );
 }
 /* ==================================== */
 /* ==================================== */
@@ -1065,6 +1065,7 @@ body, html {
 	min-height: 100%;
 	position: relative;
 	overflow: hidden;
+	display: table;
 }
 
 .section-clients .bg-top .bg-helper-left {
@@ -1094,6 +1095,8 @@ body, html {
 
 .section-clients .container {
 	position: relative;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .section-clients h1 {

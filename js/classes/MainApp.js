@@ -1,8 +1,9 @@
 define([
 	"funcs",
 	"eva",
-	"jquery"
-], function(f, Events, $) {
+	"jquery",
+	"plugins/newsSlider"
+], function(f, Events, $, $newsSlider) {
 
 	var MainApp = f.CreateClass("MainApp", {}, Events);
 
@@ -21,6 +22,8 @@ define([
 		this.onScroll();
 
 		this.initClients();
+		this.initNews();
+		$("body").onepage_scroll();
 	};
 
 	MainApp.prototype.onScroll = function() {
@@ -56,7 +59,7 @@ define([
 					this.$clientsNavAllFilter.removeClass("active");
 				}
 
-				if ( this.getClientsActiveTags().length == 0 ) {
+				if ( this.getClientsActiveTags().length === 0 ) {
 					this.$clientsNavAllFilter.addClass("active");
 				}
 			} else {
@@ -80,7 +83,7 @@ define([
 			tags.push(tag);
 		});
 		return tags;
-	}
+	};
 
 	MainApp.prototype.filterClients = function() {
 		var toShowCount = 0;
@@ -88,7 +91,7 @@ define([
 		this.$clients.each(function() {
 			var $li = $(this),
 				tags = $li.data("tags").split(" "),
-				toShow =  activeTags.length == 0,
+				toShow =  activeTags.length === 0,
 				top = parseInt($li.data("top"));
 
 			for (var i=0, n=activeTags.length; i<n; i++) {
@@ -113,8 +116,23 @@ define([
 				});
 		});
 
-		this.$sectionClients.toggleClass("no-items", toShowCount == 0)
+		this.$sectionClients.toggleClass("no-items", toShowCount === 0);
+	};
+	
+	MainApp.prototype.initNews = function() {
+		this.$news = $(".section-news");
+		this.$newsBox = this.$news.find(".news");
+		this.$newsPrev = this.$news.find(".news-nav .prev");
+		this.$newsNext = this.$news.find(".news-nav .next");
+		
+		this.$newsBox.newsSlider({
+			// sooo.... params
+			$prev: this.$newsPrev,
+			$next: this.$newsNext
+		});
+		
+		this.newsSlider = this.$newsBox.data("newsSlider");
 	};
 
 	return MainApp;
-})
+});
