@@ -95,7 +95,8 @@ body, html {
 	background-image:linear-gradient(top, #021222 0%, #031a30 100%);
 	background-image:-o-linear-gradient(top, #021222 0%, #031a30 100%);
 	background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%,rgba(39, 113, 161, 0.81)), color-stop(100%,rgba(21, 84, 128, 0.32)));
-	height: 74px;
+	height: 78px;
+	border-bottom: 2px solid rgba(49, 112, 143, 0.08);
 }
 
 @media (max-width: 1200px) {
@@ -990,6 +991,8 @@ body, html {
 .section-desktop .desktop li {
 	position: absolute;
 	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .section-desktop .desktop-nav {
@@ -1028,6 +1031,31 @@ body, html {
 	height: 100%;
 }
 
+.section-desktop .desktop .items {
+	position: absolute;
+	display: block;
+	background: white;
+	width: 63.1578947368421%;
+	height: 79.40140845070422%;
+	top: 50%;
+	left: 50%;
+	margin-left: -31.535087719298247%;
+	margin-top: -21.4%;
+	z-index: 2;
+	border-radius: 2px;
+}
+
+.section-desktop .desktop .items a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+.section-desktop .desktop .items a img {
+	width: 100%;
+}
 /* ==================================== */
 /* ==================================== */
 /* Clients */
@@ -1289,7 +1317,7 @@ body, html {
 /* Reviews */
 .section-reviews {
 	width: 100%;
-	height: 690px;
+	height: 100%;
 	background: url(../img/reviews/bg.jpg) center center;
 	background-size: cover;
 	position: relative;
@@ -1437,11 +1465,11 @@ body, html {
 .section-reviews .man {
 	display: block;
 	position: absolute;
-	background: url(../img/reviews/man.png) 0 0 no-repeat;
+	background: url(../img/reviews/man.png) left bottom no-repeat;
 	background-size: 100% auto;
-	right: -22%;
-	width: 54%;
-	top: 7%;
+	right: 10%;
+	width: 34%;
+	bottom: 0;
 }
 
 .reviews-helper-triangle {
