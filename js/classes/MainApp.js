@@ -23,7 +23,7 @@ define([
 
 		this.initClients();
 		this.initNews();
-		$("body").onepage_scroll();
+		//$("body").onepage_scroll();
 	};
 
 	MainApp.prototype.onScroll = function() {

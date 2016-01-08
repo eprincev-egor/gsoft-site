@@ -1093,10 +1093,13 @@ body, html {
 
 .section-clients .bg-bottom .bg-helper-left:before {background: #f7fafb;}
 
-.section-clients .container {
-	position: relative;
+.section-clients .table-cell {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.section-clients .container {
+	position: relative;
 }
 
 .section-clients h1 {
